@@ -469,7 +469,7 @@ function LoginFormContent({
         </CardContent>
       </Card>
       {/* Temporary: Quick login as different user roles */}
-      <QuickRoleLogin onSubmit={onSubmit} />
+      {/* <QuickRoleLogin onSubmit={onSubmit} /> */}
     </div>
   )
 }
