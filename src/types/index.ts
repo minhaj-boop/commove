@@ -1,5 +1,6 @@
 export type TUserRole =
   | 'admin'
+  | 'goc'
   | 'mt_office'
   | 'adjutant'
   | 'co'
@@ -84,6 +85,7 @@ export interface MovementCertificate {
 
 export const ROLE_LABELS: Record<TUserRole, string> = {
   mt_office: 'MT Office',
+  goc: 'GOC',
   adjutant: 'Adjutant',
   co: 'Commanding Officer',
   gso1: 'GSO-1',
@@ -103,6 +105,7 @@ export const STATUS_LABELS: Record<RequestStatus, string> = {
 
 export const ROLE_COLORS: Record<TUserRole, string> = {
   admin: 'bg-green/15 text-info',
+  goc: 'bg-blue-500/15 text-blue-600',
   mt_office: 'bg-info/15 text-info',
   adjutant: 'bg-purple-500/15 text-purple-600',
   co: 'bg-amber-500/15 text-amber-600',

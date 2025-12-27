@@ -1,3 +1,4 @@
+// src/components/approval-timeline.tsx
 import { Check, X, Clock } from 'lucide-react';
 import { ApprovalRecord, ROLE_LABELS, TUserRole } from '@/types';
 import { cn, formatDate } from '@/lib/utils';

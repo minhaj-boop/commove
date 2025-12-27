@@ -1,4 +1,6 @@
+// src/lib/UserRole.ts
 export const UserRole = {
+    GOC: 'goc',
     MT_OFFICE: 'mt_office',
     ADJUTANT: 'adjutant',
     CO: 'co',

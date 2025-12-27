@@ -1,3 +1,4 @@
+// src/models/CheckpostLog.ts
 import { Schema, Document, models, model } from 'mongoose';
 
 export interface ICheckpostLog extends Document {

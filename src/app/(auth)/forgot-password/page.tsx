@@ -1,3 +1,4 @@
+// src/app/(auth)/forgot-password/page.tsx
 'use client'
 
 import { Button } from "@/components/ui/button"

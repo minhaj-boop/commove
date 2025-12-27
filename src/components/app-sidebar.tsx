@@ -1,3 +1,4 @@
+// src/components/app-sidebar.tsx
 'use client'
 
 import {
@@ -24,6 +25,7 @@ import Link from 'next/link';
 import AppSidebarUser from './app-sidebar-user';
 import { useUserStore } from '@/hooks/use-user-store';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 interface ISidebarItem {
     title: string;
@@ -45,6 +47,7 @@ const getMenuItemsForRole = (role: TUserRole) => {
                 { title: 'All Requests', url: '/requests', icon: FileText },
                 { title: 'Certificates', url: '/certificates', icon: CheckCircle },
             ];
+        case 'goc':
         case 'adjutant':
         case 'co':
         case 'gso1':
@@ -81,8 +84,15 @@ export function AppSidebar() {
         <Sidebar>
             <SidebarHeader className="border-b border-sidebar-border p-4">
                 <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sidebar-primary">
-                        <Shield className="h-6 w-6 text-sidebar-primary-foreground" />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sidebar-primary">
+                        {/* <Shield className="h-6 w-6 text-sidebar-primary-foreground" /> */}
+                        <Image
+                            src="/logo2.png"
+                            alt="Logo"
+                            width={40}
+                            height={40}
+                            className='rounded-full'
+                        />
                     </div>
                     <div className="flex flex-col">
                         <span className="text-lg font-bold text-sidebar-foreground">MOVCON</span>

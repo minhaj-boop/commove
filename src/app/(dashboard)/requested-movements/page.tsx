@@ -1,3 +1,4 @@
+// src/app/(dashboard)/requested-movements/page.tsx
 import { Suspense } from 'react';
 import RequestedMovementsTable from './RequestedMovementsTable';
 import { useUserStore } from '@/hooks/use-user-store';

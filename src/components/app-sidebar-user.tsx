@@ -1,3 +1,4 @@
+// src/components/app-sidebar-user.tsx
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from './ui/sidebar'
 import {
     DropdownMenu,

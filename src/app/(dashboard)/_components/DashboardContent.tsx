@@ -1,3 +1,4 @@
+// src/app/(dashboard)/_components/DashboardContent.tsx
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,6 +8,7 @@ import { getAllRequests } from "@/services/request.service";
 import { useEffect, useState } from "react";
 import { StatsCardsLoading, GreetingCardLoading } from "@/components/skeleton/dashboard-loading";
 import { UserRole } from "@/lib/UserRole";
+import GOCDashboard from "./GOCDashboard";
 import AdminDashboard from "./AdminDashboard";
 import { UserProfile } from "@/services/auth.service";
 
@@ -23,7 +25,12 @@ export default function DashboardContent() {
                     ? <AdminDashboard />
                     : user?.role === UserRole.MP_CHECKPOST
                         ? null
-                        : <StatsCard />
+                        : user?.role === UserRole.GOC  // ← Add GOC condition
+                            ? <GOCDashboard />
+                            : <StatsCard />
+                // : user?.role === UserRole.MP_CHECKPOST
+                //     ? null
+                //     : <StatsCard />
             }
 
 

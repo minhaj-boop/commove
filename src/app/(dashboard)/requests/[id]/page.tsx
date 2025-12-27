@@ -1,3 +1,4 @@
+// src/app/(dashboard)/requests/[id]/page.tsx
 'use client'
 
 import { StatusBadge } from '@/components/status-badge';
@@ -63,7 +64,7 @@ export default function RequestDetailsPage() {
             </div>
         );
     }
-    
+
     return (
         <div className="space-y-6">
             {/* Header */}

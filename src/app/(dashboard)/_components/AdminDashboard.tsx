@@ -1,3 +1,4 @@
+// src/app/(dashboard)/_components/AdminDashboard.tsx
 'use client'
 
 

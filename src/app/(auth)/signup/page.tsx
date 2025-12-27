@@ -1,3 +1,4 @@
+// src/app/(auth)/signup/page.tsx
 import { SignUpForm } from "@/components/signup-form"
 import Logo from "@/components/logo"
 

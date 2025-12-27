@@ -1,3 +1,4 @@
+// src/app/(auth)/signin/page.tsx
 import { LoginForm } from "@/components/login-form"
 import Logo from "@/components/logo"
 

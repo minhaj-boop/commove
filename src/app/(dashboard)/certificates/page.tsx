@@ -1,3 +1,4 @@
+// src/app/(dashboard)/certificates/page.tsx
 'use client'
 
 import { useEffect, useState } from 'react';
@@ -20,6 +21,7 @@ import CertificateLoading from '@/components/skeleton/certificate-loading';
 import CertificateDesign from '@/components/certificate-design';
 import { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
+import Image from 'next/image';
 
 export default function CertificatesPage() {
     const [certificates, setCertificates] = useState<IMovementCertificate[]>([]);
@@ -88,7 +90,14 @@ export default function CertificatesPage() {
                             <div className="bg-primary p-4 text-primary-foreground">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-3">
-                                        <Shield className="h-8 w-8" />
+                                        {/* <Shield className="h-8 w-8" /> */}
+                                        <Image
+                                            src="/logo2.png"
+                                            alt="Logo"
+                                            width={40}
+                                            height={40}
+                                            className='rounded-full'
+                                        />
                                         <div>
                                             <p className="text-xs opacity-80">Movement Permission Certificate</p>
                                             <p className="font-bold text-lg">{cert.certificateNumber}</p>

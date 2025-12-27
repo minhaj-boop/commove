@@ -1,3 +1,4 @@
+// src/app/(auth)/reset-password/page.tsx
 'use client'
 
 import { cn } from "@/lib/utils"

@@ -1,3 +1,4 @@
+// src/components/skeleton/table-loading.tsx
 import React from 'react'
 import { Skeleton } from '../ui/skeleton'
 

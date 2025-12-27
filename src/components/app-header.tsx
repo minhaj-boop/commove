@@ -1,3 +1,4 @@
+// src/components/app-header.tsx
 'use client'
 
 import { Bell, Menu } from 'lucide-react';

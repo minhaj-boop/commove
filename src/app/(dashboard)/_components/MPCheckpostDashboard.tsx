@@ -1,3 +1,4 @@
+// src/app/(dashboard)/_components/MPCheckpostDashboard.tsx
 import { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getAllRequests } from '@/services/request.service';
@@ -11,10 +12,10 @@ export default function MPCheckpostDashboard() {
     useEffect(() => {
         setLoading(true);
         getAllRequests()
-        .then((data:any) => {
-            setApprovedRequests(data.approved || []);
-            setLoading(false);
-        }).catch(() => setLoading(false));
+            .then((data: any) => {
+                setApprovedRequests(data.approved || []);
+                setLoading(false);
+            }).catch(() => setLoading(false));
     }, []);
 
     // Compose rank + name for welcome

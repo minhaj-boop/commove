@@ -1,3 +1,4 @@
+// src/components/status-badge.tsx
 import { Badge } from '@/components/ui/badge';
 import { RequestStatus, STATUS_LABELS } from '@/types';
 

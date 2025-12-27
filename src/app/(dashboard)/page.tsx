@@ -1,4 +1,5 @@
-import {GreetingCardLoading} from "@/components/skeleton/dashboard-loading";
+// src/app/(dashboard)/page.tsx
+import { GreetingCardLoading } from "@/components/skeleton/dashboard-loading";
 import { Suspense } from "react";
 import DashboardContent from "./_components/DashboardContent";
 

@@ -1,3 +1,4 @@
+// src/components/skeleton/dashboard-loading.tsx
 import { Skeleton } from '../ui/skeleton'
 import { Card, CardContent } from '../ui/card'
 
@@ -19,7 +20,7 @@ export function StatsCardsLoading() {
     )
 }
 
-export function GreetingCardLoading(){
+export function GreetingCardLoading() {
     return (
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 animate-fade-in">
             <div>

@@ -1,3 +1,4 @@
+// src/hooks/use-overlay.tsx
 'use client'
 
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from 'react';
@@ -20,7 +21,7 @@ export const OverlayProvider = ({ children }: { children: ReactNode }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [message, setMessage] = useState<string | undefined>(undefined);
     const [spinnerSize, setSpinnerSize] = useState<SpinnerSize>("md");
-    
+
     // Safe pathname access that works during SSR/prerender
     let pathname: string | null = null
     try {

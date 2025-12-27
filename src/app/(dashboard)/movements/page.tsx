@@ -1,3 +1,4 @@
+// src/app/(dashboard)/movements/page.tsx
 'use client'
 
 import { useEffect, useState } from 'react';
@@ -101,7 +102,7 @@ export default function Movements() {
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <Truck className="h-5 w-5" />
-                        Today's Approved Movements
+                        Today&apos;s Approved Movements
                     </CardTitle>
                 </CardHeader>
                 <CardContent>

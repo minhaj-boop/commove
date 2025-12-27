@@ -1,6 +1,8 @@
+// src/components/certificate-design.tsx
 import React, { forwardRef } from 'react';
 import { IMovementCertificate } from '@/models/MovementCertificate';
 import { formatDate } from '@/lib/utils';
+import Image from 'next/image';
 
 const CertificateDesign = forwardRef<
   HTMLDivElement,
@@ -97,7 +99,7 @@ const CertificateDesign = forwardRef<
             >
               {/* Left Logo */}
               <div style={{ width: '70px', height: '70px', flexShrink: 0 }}>
-                <img
+                {/* <img
                   src="/logo.png"
                   alt="Bangladesh Army Logo"
                   style={{
@@ -105,8 +107,16 @@ const CertificateDesign = forwardRef<
                     height: '100%',
                     objectFit: 'contain',
                   }}
+                /> */}
+                <Image
+                  src="/logo2.png"
+                  alt="Logo"
+                  width={40}
+                  height={40}
+                  className='rounded-full'
                 />
               </div>
+
 
               {/* Center Header Text */}
               <div style={{ flex: 1, textAlign: 'center', margin: '0 20px' }}>

@@ -69,6 +69,8 @@ export async function getRequestedMovementsForRole(role: string): Promise<IMovem
             status = 'pending_gso1'; break;
         case 'col_staff':
             status = 'pending_col_staff'; break;
+        case 'goc':  
+            status = 'pending_goc'; break;
         default:
             return [];
     }
@@ -77,8 +79,8 @@ export async function getRequestedMovementsForRole(role: string): Promise<IMovem
 }
 
 // Approval chain order (global, enforced for all requests)
-const APPROVAL_CHAIN = ['adjutant', 'co', 'gso1', 'col_staff'];
-const STATUS_CHAIN = ['pending_adjutant', 'pending_co', 'pending_gso1', 'pending_col_staff'];
+const APPROVAL_CHAIN = ['adjutant', 'co', 'gso1', 'col_staff', 'goc'];
+const STATUS_CHAIN = ['pending_adjutant', 'pending_co', 'pending_gso1', 'pending_col_staff','pending_goc'];
 
 function getNextStatus(currentStatus: string) {
     const idx = STATUS_CHAIN.indexOf(currentStatus);

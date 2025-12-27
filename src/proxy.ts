@@ -1,4 +1,4 @@
-
+// src/proxy.ts
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import type { TUserRole } from './types';
@@ -10,6 +10,14 @@ import { AUTH_REDIRECT_URL, AUTH_ROUTES, HOME_URL, isAuthRoute, isPublicRoute, P
 const roleRouteAccess: Record<TUserRole, string[]> = {
     admin: [
         '/'
+    ],
+     goc: [  // ← Add GOC routes
+        '/',
+        '/requests',
+        '/requested-movements',
+        '/certificates',
+        '/movements',
+        '/logs',
     ],
     mt_office: [
         '/',

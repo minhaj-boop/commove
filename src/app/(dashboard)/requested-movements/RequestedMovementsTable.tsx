@@ -1,3 +1,4 @@
+// src/app/(dashboard)/requested-movements/RequestedMovementsTable.tsx
 "use client";
 
 import { useRouter } from 'next/navigation';
@@ -59,7 +60,7 @@ export default function RequestedMovementsTable() {
         }
     }
 
-    if(!user) return null;
+    if (!user) return null;
     if (pendingRequests.length === 0) return (
         <div className="text-center py-12 bg-muted/50 rounded-lg">
             <FileText className="h-12 w-12 mx-auto text-muted-foreground/50 mb-4" />

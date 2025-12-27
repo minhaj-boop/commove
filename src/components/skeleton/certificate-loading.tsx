@@ -1,3 +1,4 @@
+// src/components/skeleton/certificate-loading.tsx
 import { Card, CardContent } from '../ui/card'
 import { Calendar, MapPin, Shield, Truck } from 'lucide-react'
 import { Skeleton } from '../ui/skeleton'

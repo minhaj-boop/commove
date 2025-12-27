@@ -1,4 +1,5 @@
-import mongoose, { Schema, Document, models, model } from 'mongoose';
+// src/models/User.ts
+import { Schema, Document, models, model } from 'mongoose';
 import { TUserRole } from '@/types';
 
 export interface IUser extends Document {
@@ -13,7 +14,7 @@ const UserSchema = new Schema<IUser>({
     email: { type: String, required: true, unique: true },
     role: {
         type: String, enum: [
-            'admin', 'mt_office', 'adjutant', 'co', 'gso1', 'col_staff', 'mp_checkpost'
+            'admin', 'goc', 'mt_office', 'adjutant', 'co', 'gso1', 'col_staff', 'mp_checkpost'
         ], required: true
     },
     verified: { type: Boolean, default: false },

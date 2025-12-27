@@ -1,3 +1,4 @@
+// src/app/(dashboard)/_components/approval-timeline.tsx
 import { Check, X, Clock } from 'lucide-react';
 import { ApprovalRecord, ROLE_LABELS, TUserRole } from '@/types';
 import { cn, formatDate } from '@/lib/utils';
@@ -15,15 +16,15 @@ export function ApprovalTimeline({ history, currentStatus }: ApprovalTimelinePro
     if (record) {
       return record.action;
     }
-    
+
     const currentPendingRole = currentStatus.replace('pending_', '') as TUserRole;
     const currentIndex = APPROVAL_ORDER.indexOf(currentPendingRole);
     const roleIndex = APPROVAL_ORDER.indexOf(role);
-    
+
     if (roleIndex === currentIndex) {
       return 'pending';
     }
-    
+
     return 'waiting';
   };
 

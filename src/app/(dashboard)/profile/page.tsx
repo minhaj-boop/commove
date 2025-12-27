@@ -1,3 +1,4 @@
+// src/app/(dashboard)/profile/page.tsx
 import ProfileComponent from '@/components/profile-component'
 
 export default function ProfilePage() {

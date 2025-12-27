@@ -1,3 +1,4 @@
+// src/app/(dashboard)/loading.tsx
 import { Skeleton } from '@/components/ui/skeleton'
 import React from 'react'
 

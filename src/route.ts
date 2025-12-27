@@ -1,3 +1,4 @@
+// src/route.ts
 export const AUTH_ROUTES = new Set([
     '/signin',
     '/signup',
@@ -16,8 +17,8 @@ export function isPublicRoute(pathname: string) {
     if (
         pathname.startsWith('/_next') ||
         pathname.startsWith('/favicon.ico') ||
-        pathname.startsWith('/logo.jpg') ||
-        pathname.startsWith('/logo.png') ||
+        pathname.startsWith('/logo2.jpg') ||
+        pathname.startsWith('/logo2.png') ||
         pathname.startsWith('/sitemap.xml') ||
         pathname.startsWith('/robots.txt')
     ) {
